@@ -1,0 +1,21 @@
+/*
+Colors used:
+Muser Teal: #2DB7BF
+Ink Blue: #000517
+Slate Gray: #A8ACBB
+Off-white: #F5F5F6
+*/
+
+body [
+  background-color: #F5F5F6;
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000517;
+]
+
+
+img [
+  width: 100%;
+]
