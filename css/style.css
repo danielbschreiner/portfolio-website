@@ -6,16 +6,104 @@ Slate Gray: #A8ACBB
 Off-white: #F5F5F6
 */
 
-body [
-  background-color: #F5F5F6;
+body {
+  background-color: #FFFFFF;
   font-family: 'Hind Guntur', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #000517;
-]
+}
 
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 2.5;
+  color: #000517;
+}
 
-img [
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2.0;
+  color: #81848F;
+}
+
+h3 {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 2.0;
+  color: #000517;
+}
+
+h4 {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000517;
+}
+
+img {
   width: 100%;
-]
+}
+
+a:visited {
+  color: #002FA7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2DB7BF;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #2DB7BF;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: #002FA7;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000517;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #516DB5;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #002FA7;
+  border: 2px solid #000517;
+}
+
+.button.contact:hover {
+  background-color: #516DB5;
+  color: #FFFFFF;
+}
+
+.button.contact:active {
+  color: #002FA7;
+  text-decoration: none;
+}
+
+a.social-media-icon svg {
+  width: 32px;
+}
