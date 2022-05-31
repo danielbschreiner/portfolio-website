@@ -51,25 +51,28 @@ img {
   width: 100%;
 }
 
-a:visited {
-  color: #002FA7;
+a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #007E3A;
+}
+
 a:hover {
-  color: #2DB7BF;
+  color: #73B893;
   text-decoration: underline;
 }
 
 a:active {
-  color: #2DB7BF;
-  text-decoration: none;
+  color: #007E3A;
 }
 
-.button {
+a.button {
   display: inline-block;
-  background-color: #002FA7;
+  background-color: #007E3A;
   color: #FFFFFF;
+  text-transform: uppercase;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
@@ -78,29 +81,29 @@ a:active {
   text-decoration: none;
 }
 
-.button:hover {
-  color: #516DB5;
+a.button:hover {
+  background-color: #73B893;
   text-decoration: none;
 }
 
-.button:active {
+a.button:active {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.button.contact {
+a.button.contact {
   background-color: transparent;
-  color: #002FA7;
-  border: 2px solid #000517;
+  color: #007E3A;
+  border: 1px solid #000000;
 }
 
-.button.contact:hover {
-  background-color: #516DB5;
+a.button.contact:hover {
+  background-color: #73B893;
   color: #FFFFFF;
 }
 
-.button.contact:active {
-  color: #002FA7;
+a.button.contact:active {
+  color: #007E3A;
   text-decoration: none;
 }
 
