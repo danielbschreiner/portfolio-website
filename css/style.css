@@ -6,45 +6,70 @@ Slate Gray: #A8ACBB
 Off-white: #F5F5F6
 */
 
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #E8EAF0;
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(48, 50, 50, 0.75);
+  -moz-box-shadow:    0px 6px 4px 0px rgba(48, 50, 50, 0.75);
+  box-shadow:         0px 6px 4px 0px rgba(48, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding: 200px 0 50px 0;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Hind Guntur', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
-  color: #000517;
+  line-height: 1.4;
+  color: #000000;
 }
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
   font-weight: 400;
-  line-height: 2.5;
-  color: #000517;
+  line-height: 1.6;
+  color: #000000;
 }
 
 h2 {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 2.0;
-  color: #81848F;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #007E3A;
 }
 
 h3 {
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   font-weight: 300;
-  line-height: 2.0;
-  color: #000517;
+  line-height: 1.4;
+  color: #000000;
 }
 
 h4 {
   font-family: 'Hind Guntur', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
-  color: #000517;
+  line-height: 1.4;
+  color: #000000;
+}
+
+footer {
+  border-top: 1px solid #000000;
+  padding: 0 15px;
 }
 
 img {
@@ -53,19 +78,18 @@ img {
 
 a {
   text-decoration: none;
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-a:visited {
+a:visited, a:active {
   color: #007E3A;
 }
 
 a:hover {
   color: #73B893;
   text-decoration: underline;
-}
-
-a:active {
-  color: #007E3A;
 }
 
 a.button {
@@ -76,25 +100,20 @@ a.button {
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #000517;
+  border-bottom: 2px solid #000000;
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
 a.button:hover {
   background-color: #73B893;
-  text-decoration: none;
-}
-
-a.button:active {
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 a.button.contact {
   background-color: transparent;
   color: #007E3A;
   border: 1px solid #000000;
+  border-bottom: 3px solid #000000;
 }
 
 a.button.contact:hover {
@@ -102,11 +121,100 @@ a.button.contact:hover {
   color: #FFFFFF;
 }
 
-a.button.contact:active {
+a.social-media-icon svg {
+  width: 32px;
+}
+
+a.logo {
+  width: 100px;
+}
+
+/* NAV STYLINGS */
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #007E3A;
+}
+
+nav > ul > li > a:visited {
   color: #007E3A;
   text-decoration: none;
 }
 
-a.social-media-icon svg {
-  width: 32px;
+nav > ul > li > a:hover {
+  color: #73B893;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #007E3A;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 40px 0;
+}
+
+.intro {
+  font-size: 25px;
+}
+
+#hero {
+  display: inline-block;
+  width: 100%;
+}
+
+/* MUSER page stylings */
+ul.table_of_contents {
+  list-style-type: none;
+  font-weight: 300;
+  color: #000517;
+
+ul.table_of_contents > li > a:hover {
+
+}
+
+}
+
+.muser_h1 {
+  color: #000517;
+}
+
+.muser_h2 {
+  color: #2DB7BF;
+  padding: 50px 0 30px 0;
+}
+
+.muser_h3, .muser_h4 {
+  color: #000517;
+  padding: 20px 0;
+}
+
+.row_picture {
+  padding: 75px 0px;
+}
+
+#problem_statement {
+  padding: 30px;
+  background-color: #A8ACBB;
+  font-weight: 500;
 }

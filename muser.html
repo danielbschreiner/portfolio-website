@@ -17,7 +17,9 @@
 
     <header>
      <div class="container">
-       <img class="logo" src="img/logo_placeholder.png" alt="Daniel Schreiner - logo">
+       <a class="logo" href="index.html">
+        <img src="img/DS_logo_1x.png" alt="Daniel Schreiner - logo">
+       </a>
        <nav>
          <ul>
            <li><a href="index.html">Projects</a></li>
@@ -30,43 +32,41 @@
 
     <main>
 
-      <div class="container"><!--orange-->
-        <div><!--yellow-->
-          <h1>Case Study: Muser</h1>
+      <div class="container">
+        <div class="row">
+          <h1 class="muser_h1">Case Study: Muser</h1>
           <picture>
             <source srcset="img/muser/Muser_Hero_1x.png" media="(max-width:767px)">
             <img src="img/muser/Muser_Hero_2x.png" alt="Muser Hero 1">
           </picture>
-        </div><!--yellow-->
-      </div><!--orange-->
-
-      <div class="container"><!--orange-->
-        <div><!--yellow-->
+        </div>
+      </div>
 
 <!--overview-->
-          <div><!--green-->
-            <h2>Overview</h2>
-            <div><!--teal-->
-              <h3>Muser is an app that allows users to ask certified music experts pressing questions in the fields of music performance, composition, business, technology, and more. </h3>
-              <p>Goal: To design a one-stop forum for both professional and amateur musicians looking to get their questions answered, their work critiqued, and their creative communities expanded.</p>
-              <p>Role: UX Researcher, UX Designer, UI Designer</p>
-              <p>Tools: Figma, Adobe XD, Balsamiq, UsabilityHub, OptimalSort, Google Forms</p>
-            </div><!--teal-->
-            <div><!--teal-->
-              <picture>
-                <source srcset="img/muser/Muser_Overview_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_Overview_2x.png" alt="Muser overview screen">
-              </picture>
-            </div><!--teal-->
-          </div><!--green-->
+     <div class="container">
+       <div class="row">
+         <h2 class="muser_h2">Overview</h2>
+            <h3>Muser is an app that allows users to ask certified music experts pressing questions in the fields of music performance, composition, business, technology, and more. </h3>
+              <p><b>Goal:</b> To design a one-stop forum for both professional and amateur musicians looking to get their questions answered, their work critiqued, and their creative communities expanded.</p>
+              <p><b>Role:</b> UX Researcher, UX Designer, UI Designer</p>
+              <p><b>Tools:</b> Figma, Adobe XD, Balsamiq, UsabilityHub, OptimalSort, Google Forms</p>
+        </div>
+        <div class="row">
+          <picture>
+            <source srcset="img/muser/Muser_Overview_1x.png" media="(max-width:767px)">
+            <img src="img/muser/Muser_Overview_2x.png" alt="Muser overview screen">
+          </picture>
+        </div>
 
+        <div class="row_picture">
           <picture>
             <source srcset="img/muser/Muser_table_of_contents_1x.png" media="(max-width:767px)">
             <img src="img/muser/Muser_table_of_contents_2x.png" alt="Case Study table of contents">
           </picture>
+        </div>
 
-          <div>
-            <ul>
+        <div class="row">
+          <ul class="table_of_contents">
               <li><a href="#problem_statement">Problem Statement</a></li>
               <li><a href="#online_surveys">Online Surveys</a></li>
               <li><a href="#user_interviews">User Interviews</a></li>
@@ -80,213 +80,270 @@
               <li><a href="#design_mockups">Design Mockups</a></li>
               <li><a href="#style_guide">Style Guide</a></li>
               <li><a href="https://www.figma.com/proto/fd90uHUIWbVnoPpkZ2TBUg/UX-Immersion-Course%3A-CareerFoundry?node-id=491%3A28&scaling=min-zoom&page-id=374%3A2&starting-point-node-id=491%3A28" target="_blank">Interactive Prototype</a></li>
-            </ul>
-          </div>
+          </ul>
+        </div>
+      </div>
 
 <!--understanding the problem space-->
-          <div><!--green-->
-            <h2>Understanding the Problem Space</h2>
+      <div class="container">
+        <div class="row">
+          <h2 class="muser_h2">Understanding the Problem Space</h2>
             <p>In today’s Do-It-Yourself landscape, it can be daunting for musicians to navigate all of the industry knowledge, business savviness, and niche technical skills needed to be successful in this ever-changing field – while still nurturing their creative passions.</p>
             <p>My initial market and competitor research yielded four core problem areas:</p>
-            <div><!--teal-->
-              <div><!--blue-->
-                <p>Lack of trust. Musicians may not know friends or family that can give them specialized advice, and are skeptical about consulting firms and advisors interested in making a profit off of giving advice.</p>
-                <p>Lack of credibility. Musicians may not want to reach out to strangers for advice, much less pay them for it, if they can’t prove they are a true expert in their field. Sometimes, even ratings and testimonials aren’t enough.</p>
-              </div><!--blue-->
-              <div><!--blue-->
-                <p>Lack of guidance. People can’t be experts in every subject – musicians may not know where to look for the advice they need, and long lists of google search results and/or tutorial videos can be intimidating.</p>
-                <p>Lack of convenience. Musicians may need specialized advice in a pinch, and probably don’t want a long process of researching credible services, registering online, and/or paying a high hourly rates.</p>
-              </div><!--blue-->
-            </div><!--teal-->
-            <div><!--teal-->
-              <h3 id="problem_statement">Problem Statement</h3>
-              <p>Users need a centralized, credible, and convenient platform to help them define what kind of advice they need, select the expert best suited to help them, and receive one-on-one expert advice that successfully meets their needs. We will know this to be true when we see a high number of experts booked, consulting sessions conducted, and positive expert reviews made by users.</p>
-            </div><!--teal-->
-          </div><!--green-->
+        </div>
 
+        <div class="row">
+          <p><b>Lack of trust.</b> Musicians may not know friends or family that can give them specialized advice, and are skeptical about consulting firms and advisors interested in making a profit off of giving advice.</p>
+        </div>
+        <div class="row">
+          <p><b>Lack of credibility.</b> Musicians may not want to reach out to strangers for advice, much less pay them for it, if they can’t prove they are a true expert in their field. Sometimes, even ratings and testimonials aren’t enough.</p>
+        </div>
+        <div class="row">
+          <p><b>Lack of guidance.</b> People can’t be experts in every subject – musicians may not know where to look for the advice they need, and long lists of google search results and/or tutorial videos can be intimidating.</p>
+        </div>
+        <div class="row">
+          <p><b>Lack of convenience.</b> Musicians may need specialized advice in a pinch, and probably don’t want a long process of researching credible services, registering online, and/or paying a high hourly rates.</p>
+        </div>
+
+        <div class="row">
+          <h3 class="muser_h3">Problem Statement</h3>
+          <div id=problem_statement>
+            <p>Users need a centralized, credible, and convenient platform to help them define what kind of advice they need, select the expert best suited to help them, and receive one-on-one expert advice that successfully meets their needs. We will know this to be true when we see a high number of experts booked, consulting sessions conducted, and positive expert reviews made by users.</p>
+          </div>
+        </div>
+
+       <div class="row_picture">
           <picture>
             <source srcset="img/muser/Muser_problem_statement_1x.png" media="(max-width:767px)">
             <img src="img/muser/Muser_problem_statement_2x.png" alt="Problem statement graphic">
           </picture>
+       </div>
+     </div>
 
 <!--research-->
-          <div><!--green-->
-            <h2>Research</h2>
+    <div class="container">
+      <h2 class="muser_h2">Research</h2>
 
-            <div><!--teal-->
-              <h3 id="online_surveys">Online Surveys</h3>
-              <p>Excited to connect and learn from real people, I reached out to my personal network of music friends and colleagues from a wide variety of backgrounds. </p>
-              <p>First, I sent out online surveys to gather more quantitative data from a larger sample size of potential users. I wanted to get a general sense of what music skill areas people wanted to gain more expertise in, how often they encounter questions in their musical practice that they can’t easily answer, and where they usually turn to seek advice.</p>
-              <div><!--blue-->
-                <h4>Key Takeaways:</h4>
-                <div><!--purple-->
-                  <p>Most musicians want to be more skilled in music production (recording, mixing, mastering) and music business (industry knowledge, marketing, maximizing revenue).</p>
-                  <p>Music professionals encounter questions at least a few times a week, while music amateurs encounter questions a few times a month.</p>
-                </div><!--purple-->
-                <div><!--purple-->
-                  <p>Most musicians prefer to ask a friend or colleague for help, with google search as a close second.</p>
-                  <p>Most musicians express ambivalence about paying for expert advice, stating that they “maybe” would consider hiring someone for a consultation.</p>
-                </div><!--purple-->
-              </div><!--blue-->
-              <picture>
-                <source srcset="img/muser/Muser_online_surveys_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_online_surveys_2x.png" alt="Online survey results">
-              </picture>
-            </div><!--teal-->
+      <div class="row">
+        <h3 class="muser_h3">Online Surveys</h3>
+          <p>Excited to connect and learn from real people, I reached out to my personal network of music friends and colleagues from a wide variety of backgrounds. </p>
+          <p>First, I sent out online surveys to gather more quantitative data from a larger sample size of potential users. I wanted to get a general sense of what music skill areas people wanted to gain more expertise in, how often they encounter questions in their musical practice that they can’t easily answer, and where they usually turn to seek advice.</p>
+      </div>
 
-            <div><!--teal-->
-              <h3 id="user_interviews">User Interviews</h3>
-              <p>Seeking to gain more specific insights into these behaviors and viewpoints (read: follow-up questions), I interviewed four people representing a 10+ year age range and evenly split between music professionals and dedicated music amateurs. </p>
-              <div><!--blue-->
-                <h4>Key Takeaways:</h4>
-                <div><!--purple-->
-                  <p>Both music professionals and non-professionals seem primarily interested in gaining access to new music communities, both in-person and primarily via internet.</p>
-                  <p>Music professionals tend to report greater access to larger networks of music friends and colleagues than musicians no longer working in the music profession. </p>
-                </div><!--purple-->
-                <div><!--purple-->
-                  <p>Some musicians feel that ratings and testimonials are not enough to convince them to choose an expert. They want to view each expert in action first, watching videos of them demonstrating their skill or participating in a free workshop, for example.</p>
-                  <p>In an industry where success largely depends on who you know, both music professionals and amateurs would consider paying experts if experts can send along real career opportunities. </p>
-                </div><!--purple-->
-              </div><!--blue-->
-            </div><!--teal-->
-          </div><!--green-->
+      <h4>Key Takeaways:</h4>
+      <div class="row">
+        <li>Most musicians want to be more skilled in music production (recording, mixing, mastering) and music business (industry knowledge, marketing, maximizing revenue).</li>
+      </div>
+      <div class="row">
+        <li>Music professionals encounter questions at least a few times a week, while music amateurs encounter questions a few times a month.</li>
+      </div>
+      <div class="row">
+        <li>Most musicians prefer to ask a friend or colleague for help, with google search as a close second.</li>
+      </div>
+      <div class="row">
+        <li>Most musicians express ambivalence about paying for expert advice, stating that they “maybe” would consider hiring someone for a consultation.</li>
+      </div>
+
+      <div class="row_picture">
+        <picture>
+         <source srcset="img/muser/Muser_online_surveys_1x.png" media="(max-width:767px)">
+         <img src="img/muser/Muser_online_surveys_2x.png" alt="Online survey results">
+       </picture>
+     </div>
+
+     <div class="row">
+       <h3 class="muser_h3">User Interviews</h3>
+          <p>Seeking to gain more specific insights into these behaviors and viewpoints (read: follow-up questions), I interviewed four people representing a 10+ year age range and evenly split between music professionals and dedicated music amateurs. </p>
+     </div>
+
+     <h4>Key Takeaways:</h4>
+     <div class="row">
+       <li>Both music professionals and non-professionals seem primarily interested in gaining access to new music communities, both in-person and primarily via internet.</li>
+     </div>
+     <div class="row">
+       <li>Music professionals tend to report greater access to larger networks of music friends and colleagues than musicians no longer working in the music profession.</li>
+     </div>
+     <div class="row">
+       <li>Some musicians feel that ratings and testimonials are not enough to convince them to choose an expert. They want to view each expert in action first, watching videos of them demonstrating their skill or participating in a free workshop, for example.</li>
+     </div>
+     <div class="row">
+       <li>In an industry where success largely depends on who you know, both music professionals and amateurs would consider paying experts if experts can send along real career opportunities.</li>
+     </div>
+  </div>
 
 <!--ideation-->
-          <div><!--green-->
-            <h2>Ideation</h2>
+  <div class="container">
+    <h2 class="muser_h2">Ideation</h2>
 
-            <div><!--teal-->
-              <h3 id="personas">Personas</h3>
-              <p>Based on my research findings, I created two primary personas to represent Muser’s chief target audiences: the young professional and the dedicated amateur.</p>
-              <p>Roberto Salazar represents Muser’s first target demographic: emerging to mid-career professional musicians who perform and/or teach music full-time. Roberto has to balance rigorous practice with teaching, performing concerts, and applying to opportunities, and doesn’t have much time to address gaps in his skill set. Networking and mentorship is a big part of advancing Roberto’s career, but in an often cutthroat field, trust is essential.</p>
-              <p>JD Martin, on the other hand, represents musicians passionate about their craft but making a living outside of music to some degree. Like the demographic they represent, JD wants to continue dedicating themselves to their music practice, but feels cut off from the world of full-time music professionals. With less directly pressing demands on their time, JD needs motivation, inspiration, and advice to propel them forward creatively.</p>
-              <picture>
-                <source srcset="img/muser/Muser_personas_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_personas_2x.png" alt="Muser personas">
-              </picture>
-            </div><!--teal-->
+    <div class="row">
+      <h3 class="muser_h3">Personas</h3>
+        <p>Based on my research findings, I created two primary personas to represent Muser’s chief target audiences: the young professional and the dedicated amateur.</p>
+        <p>Roberto Salazar represents Muser’s first target demographic: emerging to mid-career professional musicians who perform and/or teach music full-time. Roberto has to balance rigorous practice with teaching, performing concerts, and applying to opportunities, and doesn’t have much time to address gaps in his skill set. Networking and mentorship is a big part of advancing Roberto’s career, but in an often cutthroat field, trust is essential.</p>
+        <p>JD Martin, on the other hand, represents musicians passionate about their craft but making a living outside of music to some degree. Like the demographic they represent, JD wants to continue dedicating themselves to their music practice, but feels cut off from the world of full-time music professionals. With less directly pressing demands on their time, JD needs motivation, inspiration, and advice to propel them forward creatively.</p>
+    </div>
 
-            <div><!--teal-->
-              <h3 id="mental_models">Mental Models</h3>
-              <p>Using these personas as a jumping off point, I created mental models to gain a deeper understanding of the initial scenarios in which Roberto and JD would encounter their respective problems, especially the situations leading up to each persona opening Muser. </p>
-              <p>In Roberto Salazar’s mental model, I was able to envision a clear sequence of events prompting Roberto to realize that he lacked the time and know-how to create a press kit on his own, and that attempting to get advice through the internet and his network wasn’t getting fast enough results - leading him to Muser.</p>
-              <p>In JD Martin’s case, I wanted to map out their desire to create new work after a hiatus, their feelings of insecurity and frustration from being “stuck” and not knowing how to get through a creative block, and how they might approach Muser with a more socially curious and less pin-pointed frame of mind than Roberto. </p>
-              <picture>
-                <source srcset="img/muser/Muser_mental_models_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_mental_models_2x.png" alt="Mental models">
-              </picture>
-            </div><!--teal-->
+    <div class="row_picture">
+      <picture>
+        <source srcset="img/muser/Muser_personas_1x.png" media="(max-width:767px)">
+        <img src="img/muser/Muser_personas_2x.png" alt="Muser personas">
+      </picture>
+    </div>
 
-            <div><!--teal-->
-              <h3 id="journey_maps">Journey Maps</h3>
-              <p>Creating journey maps allowed me to further clarify how each persona might use Muser differently, while also visualizing what Muser’s central flows should look like - onboarding, browsing Expert profiles, and even connecting with other users.</p>
-              <div><!--blue-->
-                <h4>Key Takeaways:</h4>
-                <div><!--purple-->
-                  <p>During initial onboarding, allow all users to browse the app before creating a full account, adding a payment method, etc.</p>
-                  <p>Each Expert profile should have an intro video near the top where users can quickly get a sense of the Expert “in action,” promoting trust beyond CVs and written testimonials.</p>
-                </div><!--purple-->
-                <div><!--purple-->
-                  <p>Include social media elements in Muser’s features to facilitate connection and community between users (i.e. user profiles, newsfeed, ability to post, ability to “like” and “comment” on others’ posts).</p>
-                  <p>Allow users to send a certain number of initial messages to Experts at no charge, with Experts clearly stating their areas of expertise and providing quotes particular to each situation.</p>
-                </div><!--purple-->
-              </div><!--blue-->
-              <picture>
-                <source srcset="img/muser/Muser_user_journey_maps_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_user_journey_maps_2x.png" alt="Journey maps">
-              </picture>
-            </div><!--teal-->
+    <div class="row">
+      <h3 class="muser_h3">Mental Models</h3>
+        <p>Using these personas as a jumping off point, I created mental models to gain a deeper understanding of the initial scenarios in which Roberto and JD would encounter their respective problems, especially the situations leading up to each persona opening Muser. </p>
+        <p>In Roberto Salazar’s mental model, I was able to envision a clear sequence of events prompting Roberto to realize that he lacked the time and know-how to create a press kit on his own, and that attempting to get advice through the internet and his network wasn’t getting fast enough results - leading him to Muser.</p>
+        <p>In JD Martin’s case, I wanted to map out their desire to create new work after a hiatus, their feelings of insecurity and frustration from being “stuck” and not knowing how to get through a creative block, and how they might approach Muser with a more socially curious and less pin-pointed frame of mind than Roberto. </p>
+   </div>
 
-            <div><!--teal-->
-              <h3 id="user_flows">User Flows</h3>
-              <p>Next, I distilled each user journey map into three core user flows, matching each persona’s goals with a concrete sequence of screens on Muser. This was an indispensable exercise in visualizing the flow of mobile app screens that I would soon be wireframing.</p>
-              <p>Creating user flows allowed me to visualize non-linear aspects of each task - for example, what would happen if JD skipped adding a payment method initially, or if Roberto wanted to view multiple Expert profiles before selecting the best candidate.</p>
-              <picture>
-                <source srcset="img/muser/Muser_user_flows_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_user_flows_2x.png" alt="User flows">
-              </picture>
-            </div><!--teal-->
+   <div class="row_picture">
+      <picture>
+        <source srcset="img/muser/Muser_mental_models_1x.png" media="(max-width:767px)">
+        <img src="img/muser/Muser_mental_models_2x.png" alt="Mental models">
+      </picture>
+   </div>
 
-            <div><!--teal-->
-              <h3 id="sitemap">Sitemap</h3>
-              <p>Finally, I created a sitemap as an overall framework for Muser’s navigation. After clarifying the intuitiveness of Muser’s information architecture by conducting a card sorting study, I nonetheless revised my sitemap repeatedly during the wireframing and testing stages - making key app features as easy as possible to find.</p>
-              <picture>
-                <source srcset="img/muser/Muser_sitemap_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_sitemap_2x.png" alt="Sitemap">
-              </picture>
-            </div><!--teal-->
-          </div><!--green-->
+   <div class="row">
+     <h3 class="muser_h3">Journey Maps</h3>
+        <p>Creating journey maps allowed me to further clarify how each persona might use Muser differently, while also visualizing what Muser’s central flows should look like - onboarding, browsing Expert profiles, and even connecting with other users.</p>
+   </div>
+
+   <h4>Key Takeaways:</h4>
+   <div class="row">
+     <li>During initial onboarding, allow all users to browse the app before creating a full account, adding a payment method, etc.</li>
+   </div>
+   <div class="row">
+     <li>Each Expert profile should have an intro video near the top where users can quickly get a sense of the Expert “in action,” promoting trust beyond CVs and written testimonials.</li>
+   </div>
+   <div class="row">
+     <li>Include social media elements in Muser’s features to facilitate connection and community between users (i.e. user profiles, newsfeed, ability to post, ability to “like” and “comment” on others’ posts).</li>
+   </div>
+   <div class="row">
+     <li>Allow users to send a certain number of initial messages to Experts at no charge, with Experts clearly stating their areas of expertise and providing quotes particular to each situation.</li>
+   </div>
+
+   <div class="row_picture">
+      <picture>
+         <source srcset="img/muser/Muser_user_journey_maps_1x.png" media="(max-width:767px)">
+         <img src="img/muser/Muser_user_journey_maps_2x.png" alt="Journey maps">
+         </picture>
+   </div>
+
+   <div class="row">
+      <h3 class="muser_h3">User Flows</h3>
+          <p>Next, I distilled each user journey map into three core user flows, matching each persona’s goals with a concrete sequence of screens on Muser. This was an indispensable exercise in visualizing the flow of mobile app screens that I would soon be wireframing.</p>
+          <p>Creating user flows allowed me to visualize non-linear aspects of each task - for example, what would happen if JD skipped adding a payment method initially, or if Roberto wanted to view multiple Expert profiles before selecting the best candidate.</p>
+   </div>
+
+   <div class="row_picture">
+      <picture>
+         <source srcset="img/muser/Muser_user_flows_1x.png" media="(max-width:767px)">
+         <img src="img/muser/Muser_user_flows_2x.png" alt="User flows">
+      </picture>
+   </div>
+
+   <div class="row"><!--teal-->
+      <h3 class="muser_h3">Sitemap</h3>
+         <p>Finally, I created a sitemap as an overall framework for Muser’s navigation. After clarifying the intuitiveness of Muser’s information architecture by conducting a card sorting study, I nonetheless revised my sitemap repeatedly during the wireframing and testing stages - making key app features as easy as possible to find.</p>
+   </div>
+
+   <div class="row_picture">
+      <picture>
+         <source srcset="img/muser/Muser_sitemap_1x.png" media="(max-width:767px)">
+         <img src="img/muser/Muser_sitemap_2x.png" alt="Sitemap">
+      </picture>
+   </div>
+  </div>
 
 <!--iteration-->
-          <div><!--green-->
-            <h2>Iteration</h2>
+  <div class="container">
+    <h2 class="muser_h2">Iteration</h2>
 
-            <div><!--teal-->
-              <h3 id="wireframing">Wireframing</h3>
-              <p>Time to sketch! Taking the three user flows above as my starting point, I created low- fidelity wireframes with a pen and paper, putting down a first draft of Muser’s bottom navigation bar in the process. As I refined these initial screens into mid- and high-fidelity wireframes, I started honing in on additional components of Muser’s functionality: search filters, calendar views, onboarding tooltips, and more.</p>
-              <picture>
-                <source srcset="img/muser/Muser_wireframes_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_wireframes_2x.png" alt="Wireframing">
-              </picture>
-            </div><!--teal-->
+    <div class="row">
+       <h3 class="muser_h3">Wireframing</h3>
+          <p>Time to sketch! Taking the three user flows above as my starting point, I created low- fidelity wireframes with a pen and paper, putting down a first draft of Muser’s bottom navigation bar in the process. As I refined these initial screens into mid- and high-fidelity wireframes, I started honing in on additional components of Muser’s functionality: search filters, calendar views, onboarding tooltips, and more.</p>
+    </div>
 
-            <div><!--teal-->
-              <h3 id="user_testing">User Testing</h3>
-              <p>After completing an initial mobile prototype for Muser, I was ready to gain valuable insights and feedback from a variety of music-makers who represent the app’s target audiences. I drew up a Test Plan and Test Script and conducted eight moderated user tests, asking each participant three initial background questions and four scenario tasks to complete using my high-fidelity prototype. </p>
-              <div><!--blue-->
-                <h4>Key Takeaways:</h4>
-                <div><!--purple-->
-                  <p>Users could not locate list of saved experts. Recommendation: Create a “Liked Experts” navigation tab/icon on high-level bottom navigation menu.</p>
-                  <p>Users could not locate “refine search” button. Recommendation: Increase size of button and include an onboarding pop-up the first time users navigate to the search tab.</p>
-                </div><!--purple-->
-                <div><!--purple-->
-                  <p>Users misinterpreted calendar availability blocks. Recommendation: Add a color legend below calendar and use intuitive colors in design mockup.</p>
-                  <p>Users preferred signing up with an integration.Recommendation: Make “sign in with Google” button more prominent, take away text forms.</p>
-                </div><!--purple-->
-              </div><!--blue-->
-              <picture>
-                <source srcset="img/muser/Muser_user_testing_1x.jpg" media="(max-width:767px)">
-                <img src="img/muser/Muser_user_testing_2x.jpg" alt="User testing">
-              </picture>
-            </div><!--teal-->
+    <div class="row_picture">
+       <picture>
+          <source srcset="img/muser/Muser_wireframes_1x.png" media="(max-width:767px)">
+          <img src="img/muser/Muser_wireframes_2x.png" alt="Wireframing">
+       </picture>
+    </div>
 
-            <div><!--teal-->
-              <h3 id="design_mockups">Design Mockups</h3>
-              <p>Taking into account participants’ feedback from my user tests, I made improvements to my prototype designs. At the same time, I began further design refinements based on studying design component guidelines from iOS and Material Design. </p>
-              <picture>
-                <source srcset="img/muser/Muser_design_mockups_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_design_mockups_2x.png" alt="Design mockups">
-              </picture>
-            </div><!--teal-->
+    <div class="row">
+       <h3 class="muser_h3">User Testing</h3>
+          <p>After completing an initial mobile prototype for Muser, I was ready to gain valuable insights and feedback from a variety of music-makers who represent the app’s target audiences. I drew up a Test Plan and Test Script and conducted eight moderated user tests, asking each participant three initial background questions and four scenario tasks to complete using my high-fidelity prototype. </p>
+    </div>
 
-            <div><!--teal-->
-              <h3 id="style_guide">Style Guide</h3>
-              <p>Finally, I created a style guide in order to consolidate Muser’s brand colors, typography, and other UI elements - outlining the ways these elements should be used to make life easier for developers (and myself).</p>
-              <picture>
-                <source srcset="img/muser/Muser_style_guide_1x.png" media="(max-width:767px)">
-                <img src="img/muser/Muser_style_guide_2x.png" alt="Style guide">
-              </picture>
-            </div><!--teal-->
-          </div><!--green-->
+       <h4>Key Takeaways:</h4>
+       <div class="row">
+         <p><b>Users could not locate list of saved experts.</b> Recommendation: Create a “Liked Experts” navigation tab/icon on high-level bottom navigation menu.</p>
+       </div>
+       <div class="row">
+         <p><b>Users could not locate “refine search” button.</b> Recommendation: Increase size of button and include an onboarding pop-up the first time users navigate to the search tab.</p>
+       </div>
+       <div class="row">
+         <p><b>Users misinterpreted calendar availability blocks.</b> Recommendation: Add a color legend below calendar and use intuitive colors in design mockup.</p>
+       </div>
+       <div class="row">
+         <p><b>Users preferred signing up with an integration.</b> Recommendation: Make “sign in with Google” button more prominent, take away text forms.</p>
+       </div>
 
-          <div><!--green-->
-            <h2>Lessons and Next Steps</h2>
+       <div class="row_picture">
+         <picture>
+            <source srcset="img/muser/Muser_user_testing_1x.jpg" media="(max-width:767px)">
+            <img src="img/muser/Muser_user_testing_2x.jpg" alt="User testing">
+         </picture>
+       </div>
+
+     <div class="row">
+        <h3 class="muser_h3">Design Mockups</h3>
+          <p>Taking into account participants’ feedback from my user tests, I made improvements to my prototype designs. At the same time, I began further design refinements based on studying design component guidelines from iOS and Material Design. </p>
+     </div>
+
+     <div class="row_picture">
+        <picture>
+           <source srcset="img/muser/Muser_design_mockups_1x.png" media="(max-width:767px)">
+           <img src="img/muser/Muser_design_mockups_2x.png" alt="Design mockups">
+        </picture>
+     </div>
+
+     <div class="row">
+        <h3 class="muser_h3">Style Guide</h3>
+            <p>Finally, I created a style guide in order to consolidate Muser’s brand colors, typography, and other UI elements - outlining the ways these elements should be used to make life easier for developers (and myself).</p>
+     </div>
+
+     <div class="row_picture">
+        <picture>
+            <source srcset="img/muser/Muser_style_guide_1x.png" media="(max-width:767px)">
+            <img src="img/muser/Muser_style_guide_2x.png" alt="Style guide">
+        </picture>
+     </div>
+    </div>
+
+<!--Lessons and next steps-->
+    <div class="container">
+      <div class="row">
+         <h2 class="muser_h2">Lessons and Next Steps</h2>
             <p>This project was my first experience creating a thorough, user-tested design solution for a purpose close to my heart: making life easier for freelance musicians.</p>
             <p>If given the opportunity, I would like to continue the work of further iterating Muser’s designs. For example, I would map out the process of posting and liking/commenting on Muser’s homepage with other users, as well as figure out how users would interact with their account page, including adjusting app settings. </p>
             <p>As far as new hypotheses, I think that including more social media elements between users, as well as more extensive interest-area pages, would help Muser’s more amateur musicians find community and discover new fields of interest. </p>
             <p>Finally, I would like to develop an Expert version of the app, designing how Experts would interact with Muser to create their profile pages, market their skill areas, and interact with more users through various helpful app features.</p>
-            <picture>
-              <source srcset="img/muser/Muser_Hero2_1x.png" media="(max-width:767px)">
-              <img src="img/muser/Muser_Hero2_2x.png" alt="Muser Hero 2">
-            </picture>
-          </div><!--green-->
-        </div><!--yellow-->
-      </div><!--orange-->
+      </div>
 
-    </main>
+      <div class="row_picture">
+         <picture>
+            <source srcset="img/muser/Muser_Hero2_1x.png" media="(max-width:767px)">
+            <img src="img/muser/Muser_Hero2_2x.png" alt="Muser Hero 2">
+         </picture>
+     </div>
+   </div>
+
+   </main>
 
     <footer id="contact">
-      <div class="container">
+      <div>
         <h2>Let’s chat!</h2>
         <h3>I love meeting people and brainstorming new ideas.</h3>
 
@@ -305,8 +362,7 @@
            </svg>
           </a>
         </div>
-
-          <p>Copyright Daniel Schreiner Design 2022</p>
+        <p>Copyright Daniel Schreiner Design Solutions, 2022</p>
      </div>
     </footer>
 
