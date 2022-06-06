@@ -92,6 +92,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 a.button {
   display: inline-block;
   background-color: #007E3A;
@@ -101,12 +103,14 @@ a.button {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #000000;
-  transition: 0.2s opacity;
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+  transition: 0.4s opacity;
   text-decoration: none;
 }
 
 a.button:hover {
   background-color: #73B893;
+  opacity: 0.8;
 }
 
 a.button.contact {
@@ -114,20 +118,23 @@ a.button.contact {
   color: #007E3A;
   border: 1px solid #000000;
   border-bottom: 3px solid #000000;
+  transition: 0.4s opacity;
 }
 
 a.button.contact:hover {
   background-color: #73B893;
   color: #FFFFFF;
+  opacity: 0.8;
 }
 
 a.social-media-icon svg {
   width: 32px;
 }
 
-a.logo {
-  width: 100px;
+.logo img {
+  width: 300px;
 }
+
 
 /* NAV STYLINGS */
 nav {
@@ -147,6 +154,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
+  font-size: 21px;
   font-weight: 500;
   color: #007E3A;
 }
@@ -183,16 +191,21 @@ nav > ul > li > a:active {
   width: 100%;
 }
 
+#headshot {
+  max-width: 500px;
+}
+
+
 /* MUSER page stylings */
-ul.table_of_contents {
+ul.table_of_contents a {
   list-style-type: none;
   font-weight: 300;
   color: #000517;
-
-ul.table_of_contents > li > a:hover {
-
 }
 
+ul.table_of_contents a:hover {
+  color: #2DB7BF;
+  text-decoration: underline;
 }
 
 .muser_h1 {
@@ -217,4 +230,94 @@ ul.table_of_contents > li > a:hover {
   padding: 30px;
   background-color: #A8ACBB;
   font-weight: 500;
+}
+
+
+/* media queries */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 30px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58%;
+  }
+
+  .col-lg-5 {
+    width: 42%;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
