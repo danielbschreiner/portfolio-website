@@ -103,13 +103,13 @@ a.button {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #000000;
-  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-  transition: 0.4s opacity;
+  opacity: 0.4s;
   text-decoration: none;
 }
 
 a.button:hover {
   background-color: #73B893;
+  transition: width 2s linear 1s;
   opacity: 0.8;
 }
 
@@ -118,12 +118,13 @@ a.button.contact {
   color: #007E3A;
   border: 1px solid #000000;
   border-bottom: 3px solid #000000;
-  transition: 0.4s opacity;
+  opacity: 0.4s;
 }
 
 a.button.contact:hover {
   background-color: #73B893;
   color: #FFFFFF;
+  transition: width 2s linear 1s;
   opacity: 0.8;
 }
 
@@ -132,7 +133,7 @@ a.social-media-icon svg {
 }
 
 .logo img {
-  width: 300px;
+  width: 265px;
 }
 
 
@@ -197,8 +198,11 @@ nav > ul > li > a:active {
 
 
 /* MUSER page stylings */
-ul.table_of_contents a {
+.table_of_contents {
   list-style-type: none;
+}
+
+ul.table_of_contents a {
   font-weight: 300;
   color: #000517;
 }
@@ -250,31 +254,28 @@ ul.table_of_contents a:hover {
     font-size: 18px;
   }
 
-  .col-md-6 {
-    width: 50%;
-
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
   }
 
-  .row::after {
-    content:"";
-    clear: both;
-    display: table;
+  .col-lg-6 {
+    width: 50%;
   }
 
 }
 
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58%;
+  .row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
   }
 
-  .col-lg-5 {
-    width: 42%;
+  .col-lg-6 {
+    width: 50%;
   }
-
 }
 
 @media only screen and (min-width: 1440px) {
