@@ -2,33 +2,37 @@
 
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Muser Project</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500&family=Titillium+Web:ital,wght@0,300;1,600&family=Ubuntu&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Schreiner - UX/UI Designer and HTML Coder</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500&family=Titillium+Web:wght@300;400&family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0bff6e487c.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
 
-    <header>
-     <div class="container">
-       <a class="logo" href="index.html">
-        <img src="img/DS_logo_1x.png" alt="Daniel Schreiner - logo">
-       </a>
-       <nav>
-         <ul>
-           <li><a href="index.html">Projects</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#contact">Contact</a></li>
-         </ul>
-       </nav>
-     </div>
-    </header>
+  <header>
+   <div class="container">
+     <div class="navtoggle" id="myNavtoggle">
+     <a class="logo" href="index.html">
+      <img src="img/DS_logo_1x.png" alt="Daniel Schreiner - logo">
+     </a>
+     <nav>
+       <ul>
+         <li><a href="index.html">Projects</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+       </ul>
+     </nav>
+    </div>
+   </div>
+  </header>
 
     <main>
 
