@@ -106,23 +106,23 @@ a.button {
 
 a.button:hover {
   background-color: #73B893;
-  transition: width 2s linear 1s;
+  transition: opacity 2s linear 1s;
   opacity: 0.8;
 }
 
-a.button.contact {
+a.contact {
   background-color: transparent;
   color: #007E3A;
   border: 1px solid #000000;
   border-bottom: 3px solid #000000;
-  opacity: 0.4s;
+  opacity: 1;
+  transition: opacity .5s linear;
 }
 
-a.button.contact:hover {
+a.contact:hover {
   background-color: #73B893;
   color: #FFFFFF;
-  transition: width 2s linear 1s;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 a.social-media-icon svg {
