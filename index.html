@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Schreiner - UX/UI Designer and HTML Coder</title>
+    <title>Daniel Schreiner - UX/UI Designer</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,14 +17,13 @@
   <body>
 
     <header>
-     <div class="container">
+     <div class="container_nav">
        <div class="navtoggle" id="myNavtoggle">
        <a class="logo" href="index.html">
-        <img src="img/DS_logo_1x.png" alt="Daniel Schreiner - logo">
+        <img src="img/DS_logo.svg" alt="Daniel Schreiner - logo">
        </a>
        <nav>
          <ul>
-           <li><a href="index.html">Projects</a></li>
            <li><a href="about.html">About</a></li>
            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
@@ -38,22 +37,19 @@
 
       <div id="hero">
         <div class="container">
-          <h1>Hi, I’m Daniel Schreiner - </h1>
-          <span class="intro">UX/UI Designer, visual artist, and musician based in Brooklyn, NY.</span>
-          <p class="intro">I’m on a mission to prove that good design can solve real problems and help people get through life easier.</p>
+          <h1>Hi, I’m Daniel Schreiner - UX/UI Designer, visual artist, and musician based in Brooklyn, NY. I’m on a mission to prove that good design can solve real problems and help people get through life easier.</h1>
         </div>
       </div>
 
-      <div id="work" class="container">
-        <h2>Recent work</h2>
-        <div class="row">
+      <div id="work" class="container_muser">
+        <div class="row_muser">
           <div class="col-lg-6">
           <picture>
             <source srcset="img/Homepage_muser_hero_1x.png" media="(max-width:767px)">
             <img src="img/Homepage_muser_hero_2x.png" alt="Muser Hero">
           </picture>
           </div>
-          <div class="col-lg-6">
+          <div id=muser_hero class="col-lg-6">
             <h3>Muser</h3>
             <p>I set out to fill a gap in the market for an app where both professional and amateur musicians could get their questions answered by industry experts, while finding new creative communities in the process. For this project, I drew up a problem statement, visualized user journeys and flows distilled from surveys and interviews, and iterated on my hypotheses via wireframes, user testing, and a high-fidelity interactive prototype.</p>
             <a href="muser.html" class="button">Find out more</a>
@@ -72,7 +68,7 @@
 
     </main>
 
-    <footer id="contact" class="container">
+    <footer id="contact" class="container_footer">
       <div>
         <h2>Let’s chat!</h2>
         <h3>I love meeting people and brainstorming new ideas.</h3>
@@ -92,7 +88,7 @@
            </svg>
           </a>
         </div>
-        <p>Copyright Daniel Schreiner Design Solutions, 2022</p>
+        Copyright Daniel Schreiner Design Solutions, 2022
      </div>
 
     </footer>
