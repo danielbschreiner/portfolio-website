@@ -6,7 +6,6 @@ Slate Gray: #A8ACBB
 Off-white: #F5F5F6
 */
 
-
 * {
   box-sizing: border-box;
 }
@@ -93,7 +92,8 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #A8ACBB;
+  background-color: #FFFFFF;
+  color: #000000;
   transition: opacity 2s linear 1s;
   opacity: 0.8;
 }
@@ -158,7 +158,7 @@ nav > ul > li > a:hover {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid;
@@ -168,7 +168,7 @@ nav > ul > li > a:hover {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -304,6 +304,7 @@ ul.table_of_contents a:hover {
   .col-lg-6 {
     width: 50%;
     align-content: center;
+    padding: 0 20px;
   }
 
   nav > ul {
