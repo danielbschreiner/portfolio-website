@@ -11,6 +11,7 @@ Off-white: #F5F5F6
 }
 
 header {
+  background: white;
   padding: 10px 0 4px;
   position: fixed;
   width: 100%;
@@ -31,7 +32,7 @@ body {
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
@@ -122,10 +123,13 @@ a.social-media-icon svg {
 }
 
 html {
-  scroll-behavior: scroll;
+  scroll-behavior: smooth;
 }
 
 /* NAV STYLINGS */
+nav {
+  background: white;
+}
 
 nav > ul {
   list-style-type: none;
@@ -138,7 +142,6 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-size: 21px;
   font-weight: 500;
-
 }
 
 nav > ul > li > a:visited {
@@ -183,11 +186,13 @@ nav > ul > li > a:hover {
 }
 
 .container {
-  padding: 0 150px 0 150px;
+  width: 68%;
+  margin: 0 auto;
 }
 
 .container_nav {
   padding: 0 30px;
+  background: white;
 }
 
 .container_footer {
@@ -208,13 +213,15 @@ nav > ul > li > a:hover {
   font-size: 25px;
 }
 
+
 #hero {
   display: inline-block;
   width: 100%;
 }
 
 #muser_hero {
-  padding-right: 240px;
+  width: 80%;
+  margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -267,15 +274,141 @@ ul.table_of_contents a:hover {
   font-weight: 500;
 }
 
+.row > .column {
+  padding: 0 8px;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* media queries */
 @media only screen and (min-width: 640px) {
   header {
+    background: none;
     text-align: unset;
     padding: 20px 0 13px;
   }
 
   nav {
+    background: none;
     width: auto;
     float: right;
     margin-top: 30px;
@@ -285,8 +418,16 @@ ul.table_of_contents a:hover {
     font-size: 18px;
   }
 
+  h1 {
+    font-size: 50px;
+  }
+
   h4 {
     font-size: 18px;
+  }
+
+  .container_nav {
+    background: none;
   }
 
   .row {
@@ -350,6 +491,7 @@ ul.table_of_contents a:hover {
       margin-right: auto;
   }
 }
+
 
 .music-illustration {
   width: 100%;
