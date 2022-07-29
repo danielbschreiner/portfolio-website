@@ -79,6 +79,16 @@ a:hover {
   text-decoration: underline;
 }
 
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
 a.button {
   display: inline-block;
   background-color: #7A7D87;
@@ -116,6 +126,7 @@ a.contact:hover {
 
 a.social-media-icon svg {
   width: 32px;
+  height: 32px;
 }
 
 .logo img {
@@ -145,6 +156,11 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
   color: #000000;
   text-decoration: none;
 }
@@ -209,6 +225,11 @@ nav > ul > li > a:hover {
   background-color: #00FDFF;
 }
 
+.row_studify {
+  margin: 40px 0;
+  background-color: #974AF9;
+}
+
 .intro {
   font-size: 25px;
 }
@@ -220,6 +241,13 @@ nav > ul > li > a:hover {
 }
 
 #muser_hero {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#studify_hero {
   width: 80%;
   margin: 0 auto;
   padding-top: 75px;
@@ -274,6 +302,16 @@ ul.table_of_contents a:hover {
   font-weight: 500;
 }
 
+a.muser_prototype_link {
+  font-weight: 500;
+  color: #28A4AC;
+}
+
+a.muser_prototype_link:hover {
+  color: #2DB7BF;
+  text-decoration: underline;
+}
+
 .row > .column {
   padding: 0 8px;
 }
@@ -282,6 +320,46 @@ ul.table_of_contents a:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/*STUDIFY stylings*/
+
+.studify_h1 {
+  color: #000000;
+}
+
+.studify_h2 {
+  color: #974AF9;
+  padding: 50px 0 30px 0;
+}
+
+.studify_h3, .studify_h4 {
+  color: #000000;
+  padding: 20px 0;
+}
+
+.table_of_contents_studify {
+  list-style-type: none;
+}
+
+ul.table_of_contents_studify a {
+  font-weight: 300;
+  color: #000000;
+}
+
+ul.table_of_contents_studify a:hover {
+  color: #B37EF6;
+  text-decoration: underline;
+}
+
+a.studify_prototype_link {
+  font-weight: 500;
+  color: #974AF9;
+}
+
+a.studify_prototype_link:hover {
+  color: #B37EF6;
+  text-decoration: underline;
 }
 
 /* Create four equal columns that floats next to eachother */
@@ -436,7 +514,7 @@ img.hover-shadow {
     column-gap: 40px;
   }
 
-  .row_muser {
+  .row_muser, .row_studify {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
@@ -446,6 +524,12 @@ img.hover-shadow {
     width: 50%;
     align-content: center;
     padding: 0 20px;
+  }
+
+  #studify_hero_picture {
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   nav > ul {
