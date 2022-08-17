@@ -226,8 +226,17 @@ nav > ul > li > a:hover {
 }
 
 .row_studify {
-  margin: 40px 0;
+
   background-color: #974AF9;
+}
+
+.row_design_challenges {
+
+  background-color: #3257B4;
+}
+
+.design_challenges_hero_picture {
+  width: 50%;
 }
 
 .intro {
