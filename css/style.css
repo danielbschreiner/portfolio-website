@@ -18,7 +18,7 @@ header {
 }
 
 main {
-  padding: 200px 0 50px 0;
+  padding: 200px 0 0 0;
 }
 
 body {
@@ -46,6 +46,16 @@ h2 {
   color: #000000;
 }
 
+h2.remove-whitespace {
+  margin-top: 0;
+  line-height: 3;
+}
+
+p.remove-whitespace {
+  margin-bottom: 0;
+  line-height: 3;
+}
+
 h3 {
   font-family: 'Hind Guntur', sans-serif;
   font-size: 30px;
@@ -64,6 +74,7 @@ h4 {
 
 img {
   width: 100%;
+  cursor: pointer;
 }
 
 a {
@@ -71,6 +82,7 @@ a {
   font-family: 'Titillium Web', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 
@@ -213,12 +225,19 @@ nav > ul > li > a:hover {
 
 .container_footer {
   background-color: #A8ACBB;
-  padding: 30px 15px 10px 30px;
+  margin: 0;
 }
 
 .row {
   margin: 40px 0;
 }
+
+.row_footer {
+  background-color: #A8ACBB;
+  margin: 0 160px;
+  align-content: center;
+}
+
 
 .row_muser {
   margin: 40px 0;
