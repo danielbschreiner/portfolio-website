@@ -87,7 +87,8 @@
               <li><a href="#wireframing">Wireframing</a><i class="fa-solid fa-arrow-right-long"></i></li>
               <li><a href="#user_testing">User Testing</a><i class="fa-solid fa-arrow-right-long"></i></li>
               <li><a href="#design_mockups">Design Mockups</a><i class="fa-solid fa-arrow-right-long"></i></li>
-              <li><a href="#style_guide">Style Guide</a><i class="fa-solid fa-arrow-right-long"></i></li>
+              <li><a href="#style_guide">Style Guide & Design System</a><i class="fa-solid fa-arrow-right-long"></i></li>
+              <li><a href="#accessibility">Accessibility</a><i class="fa-solid fa-arrow-right-long"></i></li>
               <li><a href="https://www.figma.com/proto/fd90uHUIWbVnoPpkZ2TBUg/UX-Immersion-Course%3A-CareerFoundry?node-id=491%3A28&scaling=min-zoom&page-id=374%3A2&starting-point-node-id=491%3A28" target="_blank">Interactive Prototype</a><i class="fa-solid fa-arrow-right-long"></i></li>
           </ul>
         </div>
@@ -95,7 +96,9 @@
 
 <!--understanding the problem space-->
       <div class="container">
+        <div class="border">
           <h2 class="muser_h2">Understanding the Problem Space</h2>
+        </div>
             <p>In today’s Do-It-Yourself landscape, it can be daunting for musicians to navigate all of the industry knowledge, business savviness, and niche technical skills needed to be successful in this ever-changing field – while still nurturing their creative passions.</p>
             <p>My initial market and competitor research yielded four core problem areas:</p>
 
@@ -134,48 +137,53 @@
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 9</div>
+      <div class="numbertext">1 / 10</div>
       <img src="img/muser/Muser_online_surveys_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 9</div>
+      <div class="numbertext">2 / 10</div>
       <img src="img/muser/Muser_personas_3x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 9</div>
+      <div class="numbertext">3 / 10</div>
       <img src="img/muser/Muser_mental_models_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">4 / 9</div>
+      <div class="numbertext">4 / 10</div>
       <img src="img/muser/Muser_user_journey_maps_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">5 / 9</div>
+      <div class="numbertext">5 / 10</div>
       <img src="img/muser/Muser_user_flows_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">6 / 9</div>
+      <div class="numbertext">6 / 10</div>
       <img src="img/muser/Muser_sitemap_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">7 / 9</div>
+      <div class="numbertext">7 / 10</div>
       <img src="img/muser/Muser_wireframes_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">8 / 9</div>
+      <div class="numbertext">8 / 10</div>
       <img src="img/muser/Muser_design_mockups_2x.png" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">9 / 9</div>
+      <div class="numbertext">9 / 10</div>
       <img src="img/muser/Muser_style_guide_2x.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="img/muser/Muser_accessibility_2x.png" style="width:100%">
     </div>
 
     <!-- Next/previous controls -->
@@ -222,6 +230,10 @@
 
     <div class="column">
       <img class="demo" src="img/muser/Muser_style_guide_1x.png" onclick="currentSlide(9)" alt="Style Guide">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/muser/Muser_accessibility_1x.png" onclick="currentSlide(10)" alt="Accessibility Tweaks">
     </div>
   </div>
 </div>
@@ -387,20 +399,46 @@
      <div class="row_picture">
         <picture>
            <source srcset="img/muser/Muser_desktop_1x.png" media="(max-width:767px)">
-           <img src="img/muser/Muser_desktop_2x.png" alt="Design mockups">
+           <img src="img/muser/Muser_desktop_2x.png" alt="Desktop View">
         </picture>
         <p>Example desktop view of Muser's Browse tab.</p>
      </div>
 
-        <h3 id="style_guide" class="muser_h3">Style Guide</h3>
-            <p>Finally, I created a style guide in order to consolidate Muser’s brand colors, typography, and other UI elements - outlining the ways these elements should be used to make life easier for developers (and myself).</p>
+        <h3 id="style_guide" class="muser_h3">Style Guide & Design System</h3>
+            <p>Next, I created a style guide in order to consolidate Muser’s brand colors, typography, and other UI elements. I then expanded my style guide into a full design system, outlining the ways these elements should be used to make life easier for developers (and myself).</p>
+
 
      <div class="row_picture">
         <picture>
             <source srcset="img/muser/Muser_style_guide_1x.png" media="(max-width:767px)">
-            <img src="img/muser/Muser_style_guide_2x.png" alt="Muser desktop view">
+            <img src="img/muser/Muser_style_guide_2x.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Style Guide">
         </picture>
      </div>
+     <div class="row">
+       <a class="muser_prototype_link" href="files/DBS_Exercise 5.8_Design Language System.pdf" target="_blank">Link to full design system</a>
+     </div>
+
+     <h3 id="accessibility" class="muser_h3">Accessibility</h3>
+       <p>Making my designs as intuitive and inclusive as possible is very important to me in general as a designer. After acquainting myself with the latest web accessibility guidelines (WCAG 2.1 AA), I went back through Muser’s mobile mockup to make sure my designs were adequately Perceivable, Operable, Understandable, and Robust.</p>
+
+       <h4>Some of the main improvements I made included:</h4>
+        <div class="row">
+          <div class="col-lg-6">
+           <p><b>Contrast between text and background.</b> After checking with Web AIM’s contrast checker, I changed the text color of all “Muser Teal” (#2DB7BF) brand color CTAs and chips from white to my “Ink Blue” brand color (#000517). I also found that using “Muser Teal” with onboarding popovers made reading the copy too difficult, thus opting to keep the text white and make the background “Ink Blue,” as well as generally enlarging shapes and text sizes for greater perceivability.</p>
+           <p><b>Text labels.</b> For the search/browse tab, I added in an additional “Browse” header for clarity. Furthermore, after seeing some great examples of this on the web, I added a feature where placeholder text within the credit card info field below “migrates” to text labels above each field, so that users don’t forget what they’re supposed to type upon clicking.</p>
+         </div>
+         <div class="col-lg-6">
+           <p><b>Icons/Symbols as an additional way of conveying info.</b> After learning about color blindness and the importance of including universally-recognizable symbols in addition to color to convey info, I added an additional warning icon to my “error” screens.</p>
+           <p><b>Closed captioning.</b> In order to better accommodate users that are hard of hearing, I implemented a live closed captioning option for video consultation calls with Experts.</p>
+        </div>
+      </div>
+
+       <div class="row_picture">
+         <picture>
+            <source srcset="img/muser/Muser_accessibility_1x.png" media="(max-width:767px)">
+            <img src="img/muser/Muser_accessibility_2x.png" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Accessibility Tweaks">
+         </picture>
+       </div>
     </div>
 
 <!--Lessons and next steps-->
@@ -423,7 +461,7 @@
 
    </main>
 
-   <footer>
+   <footer id="contact">
      <div  class="container_footer">
        <div class="row_footer">
          <div>
