@@ -64,6 +64,10 @@ h3 {
   color: #000000;
 }
 
+h3.hero {
+  font-size: 40px;
+}
+
 h4 {
   font-family: 'Hind Guntur', sans-serif;
   font-size: 16px;
@@ -225,7 +229,8 @@ nav > ul > li > a:hover {
 
 .container_footer {
   background-color: #A8ACBB;
-  margin: 0;
+  margin-top: 30px;
+  padding-top: 50px;
 }
 
 .row {
@@ -254,6 +259,11 @@ nav > ul > li > a:hover {
   background-color: #3257B4;
 }
 
+.row_book_me_barber {
+
+  background-color: #DE9D31;
+}
+
 .design_challenges_hero_picture {
   width: 50%;
 }
@@ -280,6 +290,26 @@ nav > ul > li > a:hover {
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 75px;
+}
+
+#studify_hero_picture {
+  width: 80%;
+  padding-top: 100px;
+  margin-top: 40px;
+}
+
+#book_me_barber_hero {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#book_me_barber_hero_picture {
+  width: 80%;
+  padding-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 120px;
 }
 
 #headshot {
@@ -366,6 +396,11 @@ a.muser_prototype_link:hover {
 .studify_h3, .studify_h4 {
   color: #000000;
   padding: 20px 0;
+}
+
+.book_me_barber_h2 {
+  color: #DE9D31;
+  padding: 50px 0 30px 0;
 }
 
 .table_of_contents_studify {
@@ -544,7 +579,7 @@ img.hover-shadow {
     column-gap: 40px;
   }
 
-  .row_muser, .row_studify {
+  .row_muser, .row_studify, .row_book_me_barber {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
@@ -557,9 +592,19 @@ img.hover-shadow {
   }
 
   #studify_hero_picture {
-    width: 50%;
+    width: 40%;
     margin-top: 40px;
     margin-bottom: 20px;
+    margin-left: 75px;
+    padding-top: 0;
+  }
+
+  #book_me_barber_hero_picture {
+    width: 38%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    padding-top: 0;
   }
 
   nav > ul {
