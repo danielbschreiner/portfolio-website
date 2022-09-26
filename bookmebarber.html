@@ -56,6 +56,29 @@
             <div class="numbertext">1 / 10</div>
             <img src="img/book-me-barber/Book-me-barber_comp_analysis_2x.png" style="width:100%">
           </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="img/book-me-barber/Book-me-barber_user_interviews_tests_2x.png" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="img/book-me-barber/Book-me-barber_comp_analysis_1x.png" onclick="currentSlide(1)" alt="Competitive Analysis">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="img/book-me-barber/Book-me-barber_user_interviews_tests_1x.png" onclick="currentSlide(2)" alt="User Interviews and Testing">
+          </div>
       </div>
       </div>
 
@@ -71,11 +94,11 @@
                 <p>During my last haircut, I asked Deon how things were going with Book Me Barber. He said, “you know, things are slow.” He’s only had the help of a single developer, and simply hasn’t had the time to scale up the app’s roster of barbers and the clients that come with them. I told him about being a UX Designer and, long story short, he agreed to let me take a look at the app and come up with a few ideas for improvement.</p>
             </div>
 
-          <div>
+
             <h2 class="book_me_barber_h2">Understanding the goal</h2>
-            <div class="row">
+              <div class="row">
                 <p>Taking Artiom Dashinsky’s <i>Solving Product Design Exercises</i> book as my starting point, I first set out to understand the <b>WHY -</b> in other words, what was the disconnect between BMB’s stated vision and its current delivery of value? And, most importantly, why is it important to improve the app’s experiences?</p>
-            </div>
+             </div>
 
               <h3 id="competitive_analysis" class="studify_h3">Competitive Analysis</h3>
                 <p>As part of this discovery phase, I selected three barber scheduling apps currently in the market representing a breadth of approaches and number of users, and conducted a competitive/UX analysis, noting strengths, weaknesses, and opportunities compared to Book Me Barber’s current iteration. I decided to focus specifically on the client side for this first phase of study.</p>
@@ -94,9 +117,47 @@
                  <div class="row_picture">
                     <picture>
                        <source srcset="img/book-me-barber/Book-me-barber_comp_analysis_1x.png" media="(max-width:767px)">
-                       <img src="img/book-me-barber/Book-me-barber_comp_analysis_2x.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Design mockups">
+                       <img src="img/book-me-barber/Book-me-barber_comp_analysis_2x.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Design mockups">
                     </picture>
                  </div>
+
+              <h2 class="book_me_barber_h2">Understanding the user</h2>
+                 <div class="row">
+                     <p>Having laid the groundwork for possible ways Book Me Barber could be reworked to not only match, but surpass existing competitors in the barber scheduling app market, I needed to gain better clarity on <b>WHO</b> BMB’s client-side audiences were, and whether BMB’s current iteration was adequately meeting their needs. </p>
+                 </div>
+                 <h4>Initial research yielded the following chief audience demographics:</h4>
+                 <div class="row">
+                   <ul>
+                     <li><b>Age:</b> 20+, from newly independent Gen Z’s through adults</li>
+                     <li><b>Gender:</b> any, with a probable skew towards male/male-identifying</li>
+                     <li><b>Location:</b> on mobile phone, from anywhere</li>
+                     <li><b>Occupation:</b> any, motivation to get a haircut not necessarily tied to job</li>
+                     <li><b>Mobility:</b> on-the-go - getting a haircut can often be a tacked-on decision</li>
+                   </ul>
+                 </div>
+
+
+                   <h3 id="user_interviews_and_testing" class="studify_h3">User Interviews and Testing</h3>
+                     <p>In order to understand more clearly the motivations and pain points of BMB’s target users, I recruited three participants to do some initial small-scale interviews and usability testing with the current BMB app. I created five interview questions with the aim of learning about each participant’s context and what trigger event(s) led them to seek/book a haircut - aka the <b>WHEN</b> and <b>WHERE</b>. I then led each participant through a moderated in-person usability test consisting of four short scenario tasks on the current BMB app, measuring task completion times, success rates, and oral feedback. </p>
+                     <h4>Key Takeaways:</h4>
+                       <div class="row">
+                        <div class="col-lg-6">
+                          <p><b>Users had significant difficulties locating Barber’s portfolio.</b> Recommendation: include text label, place icon more prominently </p>
+                          <p><b>Users were significantly deterred by the reservation booking fee.</b> Recommendation: reconsider required booking fee, implement saved payment method functionality to app </p>
+                        </div>
+                        <div class="col-lg-6">
+                          <p><b>Users found the scheduling process cumbersome.</b> Recommendation: reduce number of steps/screens in flow, reorganize list of services </p>
+                          <p><b>Users expressed confusion about certain UI elements/color choices.</b> Recommendation: revisit app UI, make colors more intuitive (i.e. CTAs, appointment time slots, etc) </p>
+                       </div>
+                      </div>
+
+                      <div class="row_picture">
+                         <picture>
+                            <source srcset="img/book-me-barber/Book-me-barber_user_interviews_tests_1x.png" media="(max-width:767px)">
+                            <img src="img/book-me-barber/Book-me-barber_user_interviews_tests_2x.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Design mockups">
+                         </picture>
+                      </div>
+
 
 
                  <p>This case study is still in progress - more to come soon!</p>
